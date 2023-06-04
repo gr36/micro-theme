@@ -1,0 +1,35 @@
+:root {
+	--text-color: #000000;
+	--background: #fff;
+	--accent: #AC3b61;
+	--dark-text: #fbfbfb;
+	--dark-background: #282D30;
+    --body-font: 18px 'Atkinson Hyperlegible', sans-serif;
+}
+
+body {
+    font: var(--body-font);
+    color: #666;
+    text-rendering: optimizeLegibility;
+    background-color: var(--background);
+}
+
+.post-title, .post-title a, .post-title a:visited {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#post-list {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 11px;
+}

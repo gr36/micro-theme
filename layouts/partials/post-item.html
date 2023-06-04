@@ -1,7 +1,7 @@
-<article class="h-entry">
+<article class="h-entry post">
   {{ if .Title }}
   <header>
-<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   </header>
   <section class="post-body">
 	{{ .Content }}
@@ -11,7 +11,7 @@
 	{{ .Content }}
 </section>
   {{ end }}
-  <aside class="dates">
+  <aside class="post-meta">
     <a href="{{ .Permalink }}" class="u-url">
 	  <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}" class="dt-published">{{ .Date.Format "3:04 PM, Jan 2" }}</time>
     </a>
