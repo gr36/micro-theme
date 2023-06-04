@@ -1,0 +1,20 @@
+<article class="h-entry">
+  {{ if .Title }}
+  <header>
+<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  </header>
+  <section class="post-body">
+	{{ .Content }}
+  </section>
+  {{ else }}
+  <section class="post-body">
+	{{ .Content }}
+</section>
+  {{ end }}
+  <aside class="dates">
+    <a href="{{ .Permalink }}" class="u-url">
+	  <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}" class="dt-published">{{ .Date.Format "3:04 PM, Jan 2" }}</time>
+    </a>
+	</aside>
+</article>
+

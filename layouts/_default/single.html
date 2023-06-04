@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="posts-wrapper">
+    <article class="h-entry post">
+      <header>
+      {{ with .Title }}
+        <h1 class="p-name">{{ . }}</h1>
+        {{ end }}
+      </header>
+      <section class="e-content post-body">
+          {{ .Content }}
+      </section>
+  
+    </article>
+</div>
+
+(( end ))
